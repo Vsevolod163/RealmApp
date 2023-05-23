@@ -14,6 +14,7 @@
 		C617A0DA2A1D18D000D168C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C617A0D82A1D18D000D168C0 /* LaunchScreen.storyboard */; };
 		C617A0EB2A1D1B1100D168C0 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C617A0EA2A1D1B1100D168C0 /* TaskListViewController.swift */; };
 		C617A0ED2A1D1B2E00D168C0 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C617A0EC2A1D1B2E00D168C0 /* TasksViewController.swift */; };
+		C617A0EF2A1D1BD600D168C0 /* AlertControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C617A0EE2A1D1BD600D168C0 /* AlertControllerBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C617A0DB2A1D18D000D168C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C617A0EA2A1D1B1100D168C0 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		C617A0EC2A1D1B2E00D168C0 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		C617A0EE2A1D1BD600D168C0 /* AlertControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		C617A0E62A1D193B00D168C0 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
+				C617A0EE2A1D1BD600D168C0 /* AlertControllerBuilder.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C617A0EF2A1D1BD600D168C0 /* AlertControllerBuilder.swift in Sources */,
 				C617A0EB2A1D1B1100D168C0 /* TaskListViewController.swift in Sources */,
 				C617A0ED2A1D1B2E00D168C0 /* TasksViewController.swift in Sources */,
 				C617A0CE2A1D18CF00D168C0 /* AppDelegate.swift in Sources */,
