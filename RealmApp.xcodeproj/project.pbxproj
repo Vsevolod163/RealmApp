@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		C617A0CE2A1D18CF00D168C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C617A0CD2A1D18CF00D168C0 /* AppDelegate.swift */; };
 		C617A0D02A1D18CF00D168C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C617A0CF2A1D18CF00D168C0 /* SceneDelegate.swift */; };
-		C617A0D22A1D18CF00D168C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C617A0D12A1D18CF00D168C0 /* ViewController.swift */; };
 		C617A0D52A1D18CF00D168C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C617A0D32A1D18CF00D168C0 /* Main.storyboard */; };
 		C617A0D72A1D18D000D168C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C617A0D62A1D18D000D168C0 /* Assets.xcassets */; };
 		C617A0DA2A1D18D000D168C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C617A0D82A1D18D000D168C0 /* LaunchScreen.storyboard */; };
+		C617A0EB2A1D1B1100D168C0 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C617A0EA2A1D1B1100D168C0 /* TaskListViewController.swift */; };
+		C617A0ED2A1D1B2E00D168C0 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C617A0EC2A1D1B2E00D168C0 /* TasksViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C617A0CA2A1D18CF00D168C0 /* RealmApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C617A0CD2A1D18CF00D168C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C617A0CF2A1D18CF00D168C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C617A0D12A1D18CF00D168C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C617A0D42A1D18CF00D168C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C617A0D62A1D18D000D168C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C617A0D92A1D18D000D168C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C617A0DB2A1D18D000D168C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C617A0EA2A1D1B1100D168C0 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		C617A0EC2A1D1B2E00D168C0 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,72 @@
 		C617A0CC2A1D18CF00D168C0 /* RealmApp */ = {
 			isa = PBXGroup;
 			children = (
-				C617A0CD2A1D18CF00D168C0 /* AppDelegate.swift */,
-				C617A0CF2A1D18CF00D168C0 /* SceneDelegate.swift */,
-				C617A0D12A1D18CF00D168C0 /* ViewController.swift */,
-				C617A0D32A1D18CF00D168C0 /* Main.storyboard */,
-				C617A0D62A1D18D000D168C0 /* Assets.xcassets */,
-				C617A0D82A1D18D000D168C0 /* LaunchScreen.storyboard */,
-				C617A0DB2A1D18D000D168C0 /* Info.plist */,
+				C617A0E52A1D193600D168C0 /* Models */,
+				C617A0E42A1D191800D168C0 /* ViewControllers */,
+				C617A0E32A1D191000D168C0 /* Storyboards */,
+				C617A0E62A1D193B00D168C0 /* Factories */,
+				C617A0E72A1D194000D168C0 /* Services */,
+				C617A0E22A1D190700D168C0 /* Sources */,
+				C617A0E12A1D18FF00D168C0 /* App */,
 			);
 			path = RealmApp;
+			sourceTree = "<group>";
+		};
+		C617A0E12A1D18FF00D168C0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C617A0CD2A1D18CF00D168C0 /* AppDelegate.swift */,
+				C617A0CF2A1D18CF00D168C0 /* SceneDelegate.swift */,
+				C617A0DB2A1D18D000D168C0 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C617A0E22A1D190700D168C0 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C617A0D62A1D18D000D168C0 /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C617A0E32A1D191000D168C0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C617A0D32A1D18CF00D168C0 /* Main.storyboard */,
+				C617A0D82A1D18D000D168C0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C617A0E42A1D191800D168C0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C617A0EA2A1D1B1100D168C0 /* TaskListViewController.swift */,
+				C617A0EC2A1D1B2E00D168C0 /* TasksViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C617A0E52A1D193600D168C0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C617A0E62A1D193B00D168C0 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		C617A0E72A1D194000D168C0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +197,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C617A0D22A1D18CF00D168C0 /* ViewController.swift in Sources */,
+				C617A0EB2A1D1B1100D168C0 /* TaskListViewController.swift in Sources */,
+				C617A0ED2A1D1B2E00D168C0 /* TasksViewController.swift in Sources */,
 				C617A0CE2A1D18CF00D168C0 /* AppDelegate.swift in Sources */,
 				C617A0D02A1D18CF00D168C0 /* SceneDelegate.swift in Sources */,
 			);
@@ -302,9 +362,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lashin.RealmApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +393,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lashin.RealmApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
