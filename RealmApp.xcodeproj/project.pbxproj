@@ -18,6 +18,8 @@
 		C617A0F12A1D1C0900D168C0 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C617A0F02A1D1C0900D168C0 /* TaskList.swift */; };
 		C617A0F32A1D1C3100D168C0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C617A0F22A1D1C3100D168C0 /* DataManager.swift */; };
 		C617A0F52A1D1C5400D168C0 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C617A0F42A1D1C5400D168C0 /* StorageManager.swift */; };
+		C657C38F2A1E2EB9001A2E3E /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C657C38E2A1E2EB9001A2E3E /* Realm */; };
+		C657C3912A1E2EB9001A2E3E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C657C3902A1E2EB9001A2E3E /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C657C3912A1E2EB9001A2E3E /* RealmSwift in Frameworks */,
+				C657C38F2A1E2EB9001A2E3E /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +158,10 @@
 			dependencies = (
 			);
 			name = RealmApp;
+			packageProductDependencies = (
+				C657C38E2A1E2EB9001A2E3E /* Realm */,
+				C657C3902A1E2EB9001A2E3E /* RealmSwift */,
+			);
 			productName = RealmApp;
 			productReference = C617A0CA2A1D18CF00D168C0 /* RealmApp.app */;
 			productType = "com.apple.product-type.application";
@@ -182,6 +190,9 @@
 				Base,
 			);
 			mainGroup = C617A0C12A1D18CF00D168C0;
+			packageReferences = (
+				C657C38D2A1E2EB9001A2E3E /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = C617A0CB2A1D18CF00D168C0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -365,12 +376,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W83LB3ZRMV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RealmApp/Info.plist;
+				INFOPLIST_FILE = RealmApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -396,12 +408,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W83LB3ZRMV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RealmApp/Info.plist;
+				INFOPLIST_FILE = RealmApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,6 +453,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C657C38D2A1E2EB9001A2E3E /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C657C38E2A1E2EB9001A2E3E /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C657C38D2A1E2EB9001A2E3E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		C657C3902A1E2EB9001A2E3E /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C657C38D2A1E2EB9001A2E3E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C617A0C22A1D18CF00D168C0 /* Project object */;
 }
